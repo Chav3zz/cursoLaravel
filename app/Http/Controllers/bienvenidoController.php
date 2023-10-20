@@ -18,4 +18,8 @@ class bienvenidoController extends Controller
                         ['nombre' => 'David', 'edad' => 28, 'turno' => 'Vespertino']);
         return view('bienvenido', compact('nombre', 'alumnos', 'datos'));
     }
+
+    public function inicio(){
+        return view('inicio');
+    }
 }
